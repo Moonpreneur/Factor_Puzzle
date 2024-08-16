@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Factor Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo"> 
+    </div>
+    <div id="welcome-screen" class="active">
+        <h1>Factor Puzzle</h1>
+        <button id="how-to-play-btn">How to Play</button>
+    </div>
+    
+    <div id="instructions-screen">
+        <div class="instructions-container">
+            <h2>Can You Get to 1?</h2>
+            <p>The Rules<br>
+            If your number encounters a factor, it will be divided by that factor.<br>
+            All other numbers will add to your number.<br>
+            GOOD LUCK!</p>
+            <button id="start-game-btn">Start Game</button>
+        </div>
+    </div>
+
+    <div id="game-screen">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo"> 
+            </div>
+            <h1>
+                Factors Puzzle
+            </h1>
+        </header>
+        <main>
+            <canvas id="factors-game-canvas"></canvas>
+
+            <div class="volume-controls">
+                <label for="click-sound-volume">Click Sound Volume:</label>
+                <input type="range" id="click-sound-volume" min="0" max="1" step="0.1" value="1">
+
+                <label for="winner-sound-volume">Winner Sound Volume:</label>
+                <input type="range" id="winner-sound-volume" min="0" max="1" step="0.1" value="1">
+            </div>
+        </main>
+        <hr>
+        <button id="reset-game-btn">Reset Game</button>
+    </div>
+
+    <audio id="slide-sound" src="tap.mp3"></audio> 
+    <audio id="winner-sound" src="win.mp3"></audio> 
+
+    <script src="factors-game-full.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

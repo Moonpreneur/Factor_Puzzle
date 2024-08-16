@@ -1,0 +1,130 @@
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: linear-gradient(to right, rgb(240, 63, 63), rgb(44, 44, 241));
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: color .75s ease-in;
+    overflow: hidden;
+}
+canvas {
+    display: block !important;
+    width: 100%;
+}
+
+h1 {
+    font-size: 6em;
+    margin-bottom: 25px;
+    color: white;
+}
+header, main, footer, hr {
+    display: block;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin-bottom: 50px;
+}
+footer, hr {
+    margin-bottom: 25px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #49c031;
+    width: 25%;
+}
+a:hover {
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 1.85em;
+    margin-left: 80px; 
+}
+#fullscreen-control {
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+}
+.factors-rules {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; 
+}
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:hover {
+    background-color: white; 
+    color: black;
+    border: 2px solid #e93068; 
+}
+#welcome-screen, #instructions-screen, #game-screen {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+#welcome-screen.active, #instructions-screen.active, #game-screen.active {
+    display: block;
+}
+.volume-controls {
+    position: absolute;
+    top: 100px; 
+    right: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.volume-controls label {
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+#instructions-screen p {
+    color: white;
+    font-size: 2.5em;
+}
+
+.instructions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    border-radius: 10px; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: whitesmoke; 
+    text-align: center; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+
